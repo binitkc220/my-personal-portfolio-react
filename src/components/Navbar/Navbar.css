@@ -1,0 +1,25 @@
+.navbar-brand{
+    color: var(--red);
+    font-size: 2rem;
+}
+.mylogo{
+    max-width: 100px;
+}
+.red-underline{
+    position: relative;
+    color: #fff !important;
+    font-size: 23px;
+}
+.red-underline::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background-color: var(--red);
+    left: 6px;
+    transition: 0.5s;
+    bottom: 3px;   
+}
+.red-underline:hover::after{
+    width:85%;
+}
