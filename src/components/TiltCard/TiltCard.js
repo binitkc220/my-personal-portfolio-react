@@ -1,11 +1,11 @@
 import React from 'react';
 import './TiltCard.css';
-import Tilt from 'react-tilt';
+import Tilt from 'react-parallax-tilt';
 
 export default function TiltCard() {
     return (
         <div className="tilt-card">
-            <Tilt className="Tilt" options={{ max: 35 }} >
+            <Tilt className="Tilt">
                 <div className="Tilt-inner">
                     <div className="tilting-card-body">
                         <span><b>Name :</b> Binit KC</span>
