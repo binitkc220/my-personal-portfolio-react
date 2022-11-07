@@ -61,7 +61,7 @@ export default function Contact() {
                             <div className="mb-3">
                                 <textarea className="form-control" placeholder="Message" onChange={onChange} id="message" name="message" style={{ height: "150px" }} value={info.message} required></textarea>
                             </div>
-                            <button type="submit" className="btn btn-light contact-button"><i className="fa-solid fa-paper-plane"></i>{sending}</button>
+                            <button type="submit" className={`btn btn-light contact-button ${sending==='Sending...'?'disabled':''}`}><i className="fa-solid fa-paper-plane"></i>{sending}</button>
                             <Alert alert={alert} />
                         </form>
                     </div>
