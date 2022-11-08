@@ -1,5 +1,5 @@
 import React from 'react';
-import MyLogo from '../../img/mylogo.png'
+import MyLogo from '../../img/mylogo.webp'
 import './Navbar.css'
 
 export default function Navbar(props) {

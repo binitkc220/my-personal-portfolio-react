@@ -1,18 +1,18 @@
 import React from 'react';
 import './Portfolio.css'
 import PortfolioCard from './PortfolioCard';
-import Static from '../../img/projectimg/static.jpg';
-import Bccer from '../../img/projectimg/bccer.png';
-import CityWebpage from '../../img/projectimg/citywebpage.jpg';
-import Design from '../../img/projectimg/design.jpg';
-import Doraemon from '../../img/projectimg/doraemonbinit.jpg';
-import Django from '../../img/projectimg/django.png';
-import iNotebook from '../../img/projectimg/inotebook.png';
-import TextUtils from '../../img/projectimg/textutils.png';
-import SMS from '../../img/projectimg/sms.png';
-import BVMLogo from '../../img/projectimg/bvmlogo.jpg';
-import Anticorruption from '../../img/projectimg/anticorruption.jpg';
-import BVMWebpage from '../../img/projectimg/bvm.png';
+import Static from '../../img/projectimg/static.webp';
+import Bccer from '../../img/projectimg/bccer.webp';
+import CityWebpage from '../../img/projectimg/citywebpage.webp';
+import Design from '../../img/projectimg/design.webp';
+import Doraemon from '../../img/projectimg/doraemonbinit.webp';
+import Django from '../../img/projectimg/django.webp';
+import iNotebook from '../../img/projectimg/inotebook.webp';
+import TextUtils from '../../img/projectimg/textutils.webp';
+import SMS from '../../img/projectimg/sms.webp';
+import BVMLogo from '../../img/projectimg/bvmlogo.webp';
+import Anticorruption from '../../img/projectimg/anticorruption.webp';
+import BVMWebpage from '../../img/projectimg/bvm.webp';
 
 export default function Portfolio() {
 
