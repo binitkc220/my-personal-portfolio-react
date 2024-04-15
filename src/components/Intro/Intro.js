@@ -1,6 +1,6 @@
 import React from 'react';
 import './Intro.css';
-import MyPhoto from '../../img/me.webp';
+import MyPhoto from '../../img/me.webp'
 import Typewriter from "typewriter-effect";
 
 export default function Intro() {
