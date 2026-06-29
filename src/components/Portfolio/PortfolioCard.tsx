@@ -13,7 +13,7 @@ export default function PortfolioCard({ title, description, imgUrl, live, source
   return (
     <div className="col-12 col-sm-6 col-md-4">
       <div className="image-overlay">
-        <img src={imgUrl} alt={title} className="img-fluid card-image" />
+        <img src={imgUrl} alt={title} className="card-image" />
         <div className="overlay">
           <div className="overlay-text">
             <h4>{title}</h4>
