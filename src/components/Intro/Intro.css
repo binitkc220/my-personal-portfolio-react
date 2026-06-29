@@ -105,7 +105,7 @@
 .blog-button:before {
     position: absolute;
     content: '\f37d';
-    font-family: 'Font Awesome\ 5 Brands';
+    font-family: 'Font Awesome 6 Brands';
     top: 9px;
     right: 16px;
     font-size: 24px;

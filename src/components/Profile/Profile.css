@@ -16,9 +16,14 @@
     color: #fff;
 }
 
-.btn-link {
-    text-decoration: none;
+.profile-tab-btn {
+    background: none;
+    border: none;
+    text-decoration: none !important;
+    color: #fff !important;
     position: relative;
+    padding: 0 8px;
+    cursor: pointer;
 }
 
 .profile-red-underline::after {
@@ -50,6 +55,31 @@
 .collapse-item span{
     font-size: 22px;
     text-align: justify;
+}
+
+.exp-link {
+    color: var(--red) !important;
+    text-decoration: none !important;
+    font-weight: 600;
+    font-size: 0.9em;
+    transition: opacity 0.2s;
+}
+
+.exp-link:hover {
+    opacity: 0.75;
+    text-decoration: underline !important;
+}
+
+.exp-link-icon {
+    font-size: 0.75em !important;
+    color: var(--red) !important;
+    vertical-align: super;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 2px !important;
+    width: auto !important;
+    height: auto !important;
+    border-radius: 0 !important;
 }
 
 .collapse-item {

@@ -1,8 +1,24 @@
-// Reference : https://medium.com/tinyso/how-to-create-an-animated-svg-circular-progress-component-in-react-5123c7d24391
-import React, { useEffect, useState } from "react";
+'use client';
 
-const CircularProgress = ({ size, strokeWidth, percentage, color, textSize }) => {
+import React, { useEffect, useState } from 'react';
+
+interface CircularProgressProps {
+  size: number;
+  strokeWidth: number;
+  percentage: number;
+  color: string;
+  textSize: number | string;
+}
+
+export default function CircularProgress({
+  size,
+  strokeWidth,
+  percentage,
+  color,
+  textSize,
+}: CircularProgressProps) {
   const [progress, setProgress] = useState(0);
+
   useEffect(() => {
     setProgress(percentage);
   }, [percentage]);
@@ -31,9 +47,9 @@ const CircularProgress = ({ size, strokeWidth, percentage, color, textSize }) =>
         r={radius}
         strokeWidth={`${strokeWidth}px`}
         transform={`rotate(-90 ${size / 2} ${size / 2})`}
-        strokeDasharray={[dash, circumference - dash]}
+        strokeDasharray={`${dash} ${circumference - dash}`}
         strokeLinecap="round"
-        style={{ transition: "all 2s" }}
+        style={{ transition: 'all 2s' }}
       />
       <text
         fill="#fff"
@@ -47,6 +63,4 @@ const CircularProgress = ({ size, strokeWidth, percentage, color, textSize }) =>
       </text>
     </svg>
   );
-};
-
-export default CircularProgress;
+}
