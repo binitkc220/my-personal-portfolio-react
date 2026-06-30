@@ -1,32 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 :root {
   --red: #ff004b;
+  --red-glow: rgba(255, 0, 75, 0.35);
+  --red-subtle: rgba(255, 0, 75, 0.08);
+  --purple: #a855f7;
+  --gradient: linear-gradient(135deg, #ff004b 0%, #a855f7 100%);
+  --bg: #0a0a0a;
+  --bg-2: #111111;
+  --bg-3: #191919;
+  --glass: rgba(255, 255, 255, 0.03);
+  --glass-hover: rgba(255, 255, 255, 0.065);
+  --border: rgba(255, 255, 255, 0.07);
+  --border-hover: rgba(255, 255, 255, 0.15);
+  --text: #f0f0f0;
+  --text-muted: rgba(255, 255, 255, 0.52);
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Poppins',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #121212 !important;
-  color: #fff !important;
-  overflow-x: hidden;
-  animation: opac 1.5s;
-}
-
-* {
+*, *::before, *::after {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
-  scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
-@keyframes opac {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+/* font-family must NOT be on ::before/::after — FA6 sets font on the element
+   and ::before inherits it; an explicit Poppins here would override that inheritance */
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--bg) !important;
+  color: var(--text) !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  animation: pageFadeIn 0.5s ease;
+}
+
+/* ── Scrollbar ───────────────────────────── */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--red); border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: var(--purple); }
+
+/* ── Section heading ─────────────────────── */
+.sec-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.5px;
+  margin-bottom: 0.65rem;
+  padding-bottom: 1.1rem;
+  position: relative;
+}
+
+.sec-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: var(--gradient);
+  border-radius: 2px;
+}
+
+.sec-title span { color: var(--red); }
+
+.sec-subtitle {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 3rem;
+  margin-top: 0.5rem;
+}
+
+/* ── Scroll reveal ───────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(36px);
+  transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-d1 { transition-delay: 0.08s; }
+.reveal-d2 { transition-delay: 0.18s; }
+.reveal-d3 { transition-delay: 0.28s; }
+.reveal-d4 { transition-delay: 0.38s; }
+
+/* ── Page fade ───────────────────────────── */
+@keyframes pageFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }

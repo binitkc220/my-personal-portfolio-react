@@ -4,7 +4,8 @@
     padding: 10px;
     color: var(--red);
 }
-i{
+.timeline-area i,
+.header-icon {
     color: var(--red);
 }
 .timeline-area{

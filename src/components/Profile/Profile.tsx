@@ -11,33 +11,34 @@ export default function Profile() {
   return (
     <div className="profile" id="about">
       <div className="container">
-        <h1 className="text-center">About</h1>
+        <h1 className="sec-title">About</h1>
 
-        <button
-          type="button"
-          className={`profile-tab-btn profile-red-underline ${activeTab === 'personal' ? 'active-underline' : ''}`}
-          onClick={() => setActiveTab('personal')}
-        >
-          <span className="profile-title">Personal</span>{' '}
-          <span className="profile-title" style={{ color: 'var(--red)' }}>Details</span>
-        </button>
-        <button
-          type="button"
-          className={`profile-tab-btn profile-red-underline ${activeTab === 'educational' ? 'active-underline' : ''}`}
-          onClick={() => setActiveTab('educational')}
-        >
-          <span className="profile-title">Educational</span>{' '}
-          <span className="profile-title" style={{ color: 'var(--red)' }}>Details</span>
-        </button>
-        <button
-          type="button"
-          className={`profile-tab-btn profile-red-underline ${activeTab === 'experience' ? 'active-underline' : ''}`}
-          onClick={() => setActiveTab('experience')}
-        >
-          <span className="profile-title">Experience</span>{' '}
-          <span className="profile-title" style={{ color: 'var(--red)' }}>Details</span>
-        </button>
-        <br /><br />
+        <div className="profile-tabs">
+          <button
+            type="button"
+            className={`profile-tab-btn profile-red-underline ${activeTab === 'personal' ? 'active-underline' : ''}`}
+            onClick={() => setActiveTab('personal')}
+          >
+            <span className="profile-title">Personal</span>{' '}
+            <span className="profile-title" style={{ color: 'var(--red)' }}>Details</span>
+          </button>
+          <button
+            type="button"
+            className={`profile-tab-btn profile-red-underline ${activeTab === 'educational' ? 'active-underline' : ''}`}
+            onClick={() => setActiveTab('educational')}
+          >
+            <span className="profile-title">Educational</span>{' '}
+            <span className="profile-title" style={{ color: 'var(--red)' }}>Details</span>
+          </button>
+          <button
+            type="button"
+            className={`profile-tab-btn profile-red-underline ${activeTab === 'experience' ? 'active-underline' : ''}`}
+            onClick={() => setActiveTab('experience')}
+          >
+            <span className="profile-title">Experience</span>{' '}
+            <span className="profile-title" style={{ color: 'var(--red)' }}>Details</span>
+          </button>
+        </div>
 
         {activeTab === 'personal' && (
           <div className="collapse-item">

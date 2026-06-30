@@ -177,7 +177,7 @@ export default function Portfolio() {
   return (
     <section id="portfolio">
       <div className="container">
-        <h1 className="text-center">Portfolio</h1>
+        <h1 className="sec-title">Portfolio</h1>
         <nav>
           <div className="nav nav-tabs" id="nav-tab" role="tablist">
             {tabs.map((tab, i) => {

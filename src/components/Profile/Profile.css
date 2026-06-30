@@ -1,120 +1,96 @@
+/* ── About / Profile section ─────────────── */
 .profile {
-    margin-top: 8rem;
-    margin-bottom: 8rem;
-    position: relative;
+  padding: 7rem 0;
+  position: relative;
 }
 
-.text-center {
-    font-weight: 800;
-    margin-bottom: 3rem;
-}
+/* sec-title comes from globals.css */
 
-.profile-title {
-    font-size: 1.8rem;
-    font-weight: 600;
-    text-decoration: none;
-    color: #fff;
+/* ── Tab buttons ─────────────────────────── */
+.profile-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .profile-tab-btn {
-    background: none;
-    border: none;
-    text-decoration: none !important;
-    color: #fff !important;
-    position: relative;
-    padding: 0 8px;
-    cursor: pointer;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 100px;
+  color: rgba(255, 255, 255, 0.65) !important;
+  text-decoration: none !important;
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 0.45rem 1.2rem;
+  cursor: pointer;
+  transition: all 0.28s;
+  letter-spacing: 0.3px;
 }
 
-.profile-red-underline::after {
-    content: '';
-    position: absolute;
-    height: 3px;
-    width: 0;
-    background-color: var(--red);
-    left: 10px;
-    transition: 0.5s;
-    bottom: 3px;
+.profile-tab-btn:hover {
+  color: #fff !important;
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.18);
 }
 
-.profile-red-underline:hover::after {
-    width: 93%;
+.profile-tab-btn.active-underline {
+  color: #fff !important;
+  background: linear-gradient(135deg, #ff004b, #a855f7);
+  border-color: transparent;
+  box-shadow: 0 4px 18px rgba(255, 0, 75, 0.35);
 }
 
-.active-underline::after {
-    content: '';
-    position: absolute;
-    height: 3px;
-    width: 93%;
-    background-color: var(--red);
-    left: 10px;
-    transition: 0.5s;
-    bottom: 3px;
+/* profile title inside tab (smaller text) */
+.profile-title {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit !important;
 }
 
-.collapse-item span{
-    font-size: 22px;
-    text-align: justify;
+/* tab content area */
+.collapse-item {
+  position: relative;
+  animation: opac 0.45s ease;
 }
 
+.collapse-item span {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+/* experience links */
 .exp-link {
-    color: var(--red) !important;
-    text-decoration: none !important;
-    font-weight: 600;
-    font-size: 0.9em;
-    transition: opacity 0.2s;
+  color: #ff004b !important;
+  text-decoration: none !important;
+  font-weight: 600;
+  font-size: 0.9em;
+  transition: opacity 0.2s;
 }
-
 .exp-link:hover {
-    opacity: 0.75;
-    text-decoration: underline !important;
+  opacity: 0.75;
+  text-decoration: underline !important;
 }
 
 .exp-link-icon {
-    font-size: 0.75em !important;
-    color: var(--red) !important;
-    vertical-align: super;
-    border: none !important;
-    padding: 0 !important;
-    margin: 0 2px !important;
-    width: auto !important;
-    height: auto !important;
-    border-radius: 0 !important;
-}
-
-.collapse-item {
-    position: relative;
-    padding: 5px;
-    /* animation: animateleft 0.4s; */
-    animation: opac 1.5s
-}
-
-@keyframes animateleft {
-    from {
-        left: -300px;
-        opacity: 0
-    }
-
-    to {
-        left: 0;
-        opacity: 1
-    }
+  font-size: 0.72em !important;
+  color: #ff004b !important;
+  vertical-align: super;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 2px !important;
+  width: auto !important;
+  height: auto !important;
+  border-radius: 0 !important;
 }
 
 @keyframes opac {
-    from {
-        opacity: 0
-    }
-
-    to {
-        opacity: 1
-    }
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
-@media only screen and (max-width: 1000px){
-    .profile-title {font-size: 20px;}
-}
-
-@media only screen and (max-width: 600px){
-    .collapse-item span{font-size:18px}
+@media (max-width: 600px) {
+  .profile { padding: 4rem 0; }
+  .collapse-item span { font-size: 0.95rem; }
 }

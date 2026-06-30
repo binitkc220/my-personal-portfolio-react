@@ -3,46 +3,53 @@ import './Footer.css';
 
 export default function Footer() {
   return (
-    <div className="footer">
-      <div className="container d-flex justify-content-between align-items-center">
-        <div className="row d-flex justify-content-between mt-2">
-          <div className="col-sm text-center-custom m-2">
-            <i className="fas fa-map-marker-alt text-warning"></i>
-            <h5>Address</h5>
-            <p className="custom-text-muted">Kohalpur-11, Banke, Nepal</p>
+    <footer className="site-footer">
+      <div className="container footer-inner">
+        {/* Info columns */}
+        <div className="footer-info">
+          <div className="footer-info-item">
+            <i className="fa-solid fa-location-dot" />
+            <div>
+              <h6>Address</h6>
+              <p>Kohalpur-11, Banke, Nepal</p>
+            </div>
           </div>
-          <div className="col-sm text-center-custom m-2">
-            <i className="fas fa-phone text-warning"></i>
-            <h5>Call Me</h5>
-            <p className="custom-text-muted">+977 (98********)</p>
+          <div className="footer-info-item">
+            <i className="fa-solid fa-phone" />
+            <div>
+              <h6>Call Me</h6>
+              <p>+977 98XXXXXXXX</p>
+            </div>
           </div>
-          <div className="col-sm text-center-custom m-2">
-            <i className="fas fa-envelope text-warning"></i>
-            <h5>Enquiries</h5>
-            <p className="custom-text-muted">binitkc220@gmail.com</p>
+          <div className="footer-info-item">
+            <i className="fa-solid fa-envelope" />
+            <div>
+              <h6>Enquiries</h6>
+              <p>binitkc220@gmail.com</p>
+            </div>
           </div>
         </div>
-        <div className="footer-right d-flex flex-column justify-content-center align-items-center">
-          <div className="footer-social-icons">
-            <a href="https://www.facebook.com/binit.kc.500/" target="_blank" rel="noreferrer">
-              <i className="fa-brands fa-facebook-f"></i>
+
+        <div className="footer-divider" />
+
+        {/* Bottom bar */}
+        <div className="footer-bottom">
+          <p className="footer-copy">
+            © {new Date().getFullYear()} Binit KC — Built with Next.js
+          </p>
+          <div className="footer-socials">
+            <a href="https://www.facebook.com/binit.kc.500/" target="_blank" rel="noreferrer" aria-label="Facebook">
+              <i className="fa-brands fa-facebook-f" />
             </a>
-            <a href="https://www.linkedin.com/in/binit-kc-2bb363163/" target="_blank" rel="noreferrer">
-              <i className="fa-brands fa-linkedin-in"></i>
+            <a href="https://www.linkedin.com/in/binit-kc-2bb363163/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+              <i className="fa-brands fa-linkedin-in" />
             </a>
-            <a href="https://github.com/binitkc220" target="_blank" rel="noreferrer">
-              <i className="fa-brands fa-github"></i>
+            <a href="https://github.com/binitkc220" target="_blank" rel="noreferrer" aria-label="GitHub">
+              <i className="fa-brands fa-github" />
             </a>
-          </div>
-          <div className="footer-text">
-            <p className="custom-text-muted">
-              Designed and Maintained using Next.js by Binit KC
-              <br />
-              Copyright 2022. All Rights Reserved
-            </p>
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }

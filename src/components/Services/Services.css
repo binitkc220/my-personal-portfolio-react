@@ -1,4 +1,16 @@
-.text-center {
-    font-weight: 800;
-    margin-bottom: 5rem;
+/* ── Services section ────────────────────── */
+.services-section {
+  padding: 7rem 0;
+  position: relative;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+@media (max-width: 640px) {
+  .services-section { padding: 4rem 0; }
+  .services-grid { grid-template-columns: 1fr; }
 }

@@ -1,30 +1,60 @@
-#portfolio{
-  margin-top: 8rem;
+/* ── Portfolio section ───────────────────── */
+#portfolio {
+  padding: 7rem 0;
 }
-.text-center {
-  font-weight: 800;
-  margin-bottom: 5rem;
+
+/* ── Tab bar ─────────────────────────────── */
+.nav-tabs {
+  border: none !important;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 2.5rem;
 }
-.nav-tabs{
-  border: none;
-}
-/* Use .nav-tabs .nav-link to match Bootstrap's own specificity and guarantee override */
-.nav-tabs .nav-link{
-  border: 0.5px solid #ddd !important;
-  color: #fff !important;
-  width: 120px;
-  border-radius: 10px;
-  margin: 10px;
-  background-color: transparent;
-}
-.nav-tabs .nav-link:hover{
-  color: var(--red) !important;
-}
-.nav-tabs .nav-link.active{
-  color: #fff !important;
+
+.nav-tabs .nav-link {
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  color: rgba(255, 255, 255, 0.62) !important;
+  background: rgba(255, 255, 255, 0.03) !important;
+  border-radius: 100px !important;
+  font-size: 0.83rem;
   font-weight: 600;
-  background: rgb(194,5,177);
-  background: linear-gradient(90deg, rgba(194,5,177,1) 0%, rgba(121,12,108,1) 45%, rgba(67,17,159,1) 100%);
+  padding: 0.4rem 1.1rem !important;
+  transition: all 0.28s;
+  letter-spacing: 0.3px;
+  width: auto;
+  margin: 0;
+}
+
+.nav-tabs .nav-link:hover {
+  color: #fff !important;
+  background: rgba(255, 255, 255, 0.07) !important;
+  border-color: rgba(255, 255, 255, 0.18) !important;
+}
+
+.nav-tabs .nav-link.active {
+  color: #fff !important;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ff004b, #a855f7) !important;
+  border-color: transparent !important;
+  box-shadow: 0 4px 18px rgba(255, 0, 75, 0.35);
+}
+
+/* ── Project card ────────────────────────── */
+.image-overlay {
+  position: relative;
+  margin-top: 1.25rem;
+  height: 220px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: transform 0.32s ease, box-shadow 0.32s ease;
+}
+
+.image-overlay:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.45);
 }
 
 .card-image {
@@ -33,45 +63,65 @@
   height: 100%;
   object-fit: cover;
   object-position: center top;
+  transition: transform 0.4s ease;
 }
 
-.image-overlay {
-  position: relative;
-  margin-top: 25px;
-  height: 220px;
-  border-radius: 20px;
-  overflow: hidden;
+.image-overlay:hover .card-image {
+  transform: scale(1.05);
 }
 
 .overlay {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
+  inset: 0;
   opacity: 0;
-  transition: .5s ease;
-  background: -webkit-linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8));
-  background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8));
+  transition: opacity 0.32s ease;
+  background: linear-gradient(160deg, rgba(20, 10, 100, 0.93), rgba(168, 0, 75, 0.88));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  gap: 0.6rem;
 }
 
-.image-overlay:hover .overlay {
-  opacity: 1;
-}
+.image-overlay:hover .overlay { opacity: 1; }
 
 .overlay-text {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  width: 60%;
-  transform: translate(-50%, -50%);
   text-align: center;
+  color: #fff;
+}
+
+.overlay-text h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.overlay-text h6 {
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.72);
+  font-weight: 400;
 }
 
 .overlay-actions {
-  width: 100%;
-  position: absolute;
-  top: 70%;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.overlay-actions .btn-light {
+  font-size: 0.76rem;
+  padding: 0.38rem 0.85rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.overlay-actions .btn-light:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 640px) {
+  #portfolio { padding: 4rem 0; }
 }
