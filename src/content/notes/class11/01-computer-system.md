@@ -187,7 +187,12 @@ The advancement in Hardware technology with the span of time is termed as Comput
 
 **Digital Computer** — The computer which works on discrete data (discontinuous data, binary system or 0 or 1) is known as digital computer. For Example, IBM PC, IBM compatible, Apple/Mac. computer etc.
 
-**Hybrid Computer** — A Computer, which has combined features of both analog and digital, is known as hybrid computer. It can convert data from analog to digital and digital to analog. These computers are used for scientific research and hospitals.
+**Hybrid Computer** — A Computer, which has combined features of both analog and digital, is known as hybrid computer. It can convert data from analog to digital and digital to analog. These computers are used for scientific research and hospitals. Some of the characteristics of Hybrid Computer are:
+- It is a combination of qualities of analog as well as digital computers.
+- It can process both continuous and discrete data.
+- It has capability to convert one type of data into another.
+- It is the special purpose machine.
+- It usually has high cost compared to analog and digital computer.
 
 ---
 
@@ -208,15 +213,286 @@ The advancement in Hardware technology with the span of time is termed as Comput
 
 ---
 
-## Hybrid Computer
+## On the Basis of Size
 
-A Computer, which has combined features of both analog and digital, is known as hybrid computer. It can convert data from analog to digital and digital to analog. These computers are used for scientific research and hospitals.
+### Super Computer
 
-### Characteristics of Hybrid Computer
+- Most powerful and fastest digital computer
+- Special purpose computer
+- Performs billions of instructions per second
+- Computing capacity equal to 40,000 microcomputers
+- Uses parallel processors
+- Requires large space
+- Requires temperature-controlled room
+- **Uses:** weather forecasting, scientific research, satellite communication, nuclear research, molecular modeling, study of DNA structure
+- **Examples:** CRAY X-Mp/24, PARAM, ANURAG, etc.
 
-- It is a combination of qualities of analog as well as digital computers.
-- It can process both continuous and discrete data.
-- It has capability to convert one type of data into another.
-- It is the special purpose machine.
-- It is mostly used in airplane, hospital, weather forecasting.
-- It usually has high cost compared to analog and digital computer.
+### Mainframe Computer
+
+- High processing power but lacks flexibility
+- Designed for large-scale data processing
+- Large in size, occupies about 1000 sq. ft. area
+- Supports more than 100 terminals
+- Used in banks, insurance companies, airlines, railway reservation systems
+- Also used in networked systems
+- **Examples:** IBM 1401, ICL 2950/10, ICL 39, CYBER 170, etc.
+
+### Minicomputer
+
+- Smaller in size and cost compared to mainframe computer, hence called mini computer
+- First released in the 1960s
+- Capabilities lie between mainframe and microcomputer, so also called **midrange computer**
+- Supports about 50 terminals
+- Used in small business organizations, industries, universities, banks, etc.
+- **Examples:** Prime 9755, VAX 7500, HCL, MAGUM, etc.
+
+### Micro Computer
+
+- Based on microprocessor
+- Small, low cost digital computer
+- Requires small space — can be placed on table or kept inside a briefcase
+- Has CPU on a single chip
+- Used in office, house, school, shop, store
+- Smallest types: laptop, notebook, palmtop, PDA
+- **Examples:** IBM PC, Apple/Macintosh
+
+---
+
+## Categories of Microcomputer
+
+Microcomputers are divided into two categories:
+
+- **Non-portable category**
+- **Portable category**
+
+### A. Non-Portable Category
+
+**1. Personal Computer (PC)**
+- Small computer, fits on normal-sized office table
+- Designed for use by one person at a time
+- Most common computer
+- Found in office, college, home, hospital, shops
+
+**2. Workstation Computer (WC)**
+- 5 to 10 times faster than PC
+- Larger main and backup memory
+- Larger, high-resolution monitor
+- Accelerated graphics handling capability
+- Suitable for architectural/engineering design, modeling, animation, video editing
+
+### B. Portable Category
+
+**1. Laptop**
+- Portable, easy to carry
+- Suitable for people on the move
+- Lightweight, has all basic features of a computer
+- LCD (Liquid Crystal Display) monitor
+- Can operate on AC or DC (battery) power, or both
+
+**2. Notebook**
+- Designed for people on the move
+- Smaller in size compared to laptop
+- Reduced keyboard, screen, functionality, and software support
+
+**3. Tablet PC**
+- Looks similar to laptop/notebook but more convenient
+- Differs in accessories, screen, software used
+- Allows writing directly on screen using a pen instead of keyboard
+- Has handwriting recognition software that digitizes handwritten text
+
+**4. Palm Top**
+- Portable PC, size of a palm
+- Very small memory and features compared to laptop/notebook
+- Used for storing phone numbers, addresses, pictures, small data
+- Has electronic writing pad and light-sensitive electronic pen for input
+
+**5. PDA (Personal Digital Assistant)**
+- Limited in tasks it can perform
+- Modern PDAs include: colored screen, scientific calculator, digital diary (phone numbers/addresses), web browser, cell phone, audio-video, games
+
+---
+
+## Concept of Computer Architecture and Organization
+
+- The design, arrangement, construction or organization of the different parts of a computer system is known as **Computer Architecture**.
+- It is the conceptual design and fundamental operational structure of a computer system.
+- It is a framework and functional description of requirements and design implementations for the various parts of a computer, focusing largely on the way by which the CPU performs internally and accesses addresses in memory.
+- **Computer Organization** refers to the operational units and their interconnections that realize the architecture specification.
+- Computer organization deals with physical aspects of computer design, memory and their types as well as the microprocessor design.
+
+---
+
+## Components of Computer System
+
+A computer system consists of the following components:
+
+### 1. Input Hardware
+
+- Most computers cannot accept data in human forms like speech or handwriting
+- Data must be presented in a way that is easily convertible into electronic form
+- Commonly done by typing data into a keyboard, which converts it into machine-sensible form
+- Keyboard is just one of many input devices
+- In some cases, machine-readable documents or media are produced as part of the input process
+
+### 2. Output Hardware
+
+- Provides processed results to the user
+- Result is taken from main storage and fed to an output device
+- Two forms of output:
+  - **Hardcopy output:** Printed form (via printer)
+  - **Softcopy output:** Displayed on monitor screen (like a TV screen)
+
+### 3. Processing Hardware
+
+- Instructions are obeyed and necessary arithmetic operations carried out on data
+- **Arithmetic-Logical Unit (ALU):**
+  - Performs arithmetic and logical operations
+  - Usually not a physically separate component (same for control unit)
+  - Operations occur at very high speed (e.g., millions of numbers summed in under a second)
+- **Control Unit:**
+  - Controls the operation of the computer
+  - Fetches instructions from main storage
+  - Interprets instructions
+  - Issues necessary signals to system components
+  - Directs all hardware operations needed to obey instructions
+
+### 4. Storage Hardware
+
+- Data and instructions are stored and held until needed for processing
+- Instructions dictate what actions are to be taken on data
+- Results of actions are held until required for output
+
+---
+
+## Microprocessor
+
+### Basic Concepts
+
+- Multipurpose, programmable, clock-driven, register-based electronic component
+- Fabricated on a single IC (Integrated Circuit) chip
+- Capable of performing Arithmetic and Logical Unit (ALU) operations
+- Communicates with other connected components
+- General purpose device, applicable to a wide range of applications
+- Reads binary instructions from an input device or primary memory
+- Accepts binary data as input, processes data according to instructions, provides results as output
+- First microprocessor: **Intel 4004** developed by Intel Corporation in **1971**
+- Functions like an "artificial brain"
+
+### Functions of the Microprocessor
+
+- Carries out processing instructions in and out (fetch) from main memory
+- Gives commands to all parts of the computer system
+- Controls the sequence of operations
+- Controls the storage of data or instructions
+- Performs arithmetic calculations (addition, subtraction, etc.)
+- Supervises and controls I/O (Input/Output) devices, in addition to execution
+
+### Clock Speed
+
+- Every microprocessor/CPU contains a clock along with the Control Unit (CU)
+- Clock generates the speed at which instructions are executed
+- Synchronizes all components of the computer
+- Also known as **Clock Rate**
+- Measured in **Megahertz (MHz)** or **Gigahertz (GHz)**
+  - 1 MHz = 1 million cycles per second
+  - 1 GHz = 1 billion cycles per second
+- Greater the speed → more instructions performed
+- Today's PCs: clock speeds up to 5 GHz
+
+> **Problem with High Clock Speed:** High clock speed generates heat due to friction, which can damage the microprocessor chip.
+
+### Word Length
+
+- Number of bits a processor can process in a single instruction
+- Also called **word size**
+- Determines:
+  - Amount of RAM that can be accessed
+  - Total number of pins on the microprocessor
+- Higher word size → faster CPU instruction execution
+- Word length ranges from 4 bits to 64 bits (depending on type of microcomputer)
+- Most current microprocessors use **32-bit or 64-bit** architecture
+
+---
+
+## Components of Microprocessor
+
+The microprocessor consists of mainly three components:
+
+1. Arithmetic Logic Unit (ALU)
+2. Control Unit (CU)
+3. Register Array (Set of Registers)
+
+### 1. Arithmetic and Logic Unit (ALU)
+
+- Performs mathematical computations and logic operations
+- Controls the speed of these operations as directed by the CU
+- Also executes comparisons and logical testing
+
+**Calculations performed by ALU:**
+- Addition, subtraction, multiplication, division
+- Logical operations: AND, OR, XOR, NOT
+- Increment and decrement
+- Left or right shift (content of accumulator shifted left/right by one bit)
+- Clear (content of accumulator or carry flag made zero)
+- Exponential, logarithmic, trigonometric, and floating-point operations
+
+### 2. Control Unit (CU)
+
+- Controls the entire operation of the computer
+- Receives signals from CPU to move data between microprocessor, memory, input, and output devices
+- Acts as the **nerve system** of the computer system
+- Consists of multiple components: Decoder, Flag, Quartz crystal, Control logic circuits
+
+**Functions of the Control Unit:**
+1. Controls and coordinates sequence of data movements around ALU, registers, memories, input and output devices
+2. Fetches instructions from memory, decodes and interprets them, and executes the task
+3. Issues control signals that control hardware components within the CPU
+4. Gives orders to ALU and directs operation of the whole computer system
+5. Generates timing/clock speed to count the instruction cycle of the computer
+6. Provides status of every device connected to the computer to check its functionality
+7. Receives external instructions/commands and generates a sequence of control signals
+
+### 3. Register Array
+
+- Registers = temporary data holding places in the microprocessor
+- Small amounts of high-speed memory contained within the CPU
+- CPU contains multiple registers for program execution
+- Used to handle movement of information between various units of the computer and to speed up processing
+- Most CPUs today have 32-bit or 64-bit registers
+
+**Registers are needed during processing for:**
+- Address of the next instruction to be executed
+- Current instruction being decoded
+- Results of calculations of frequently used small amounts of data
+
+---
+
+## Functions of Common Registers
+
+| Register | Full Form | Function |
+|----------|-----------|----------|
+| **MAR** | Memory Address Register | Holds the address of the active memory location; loaded from program control register when an instruction is read from memory |
+| **MBR** | Memory Buffer Register | Holds the contents of the accessed (read/write) memory word; a word to be stored in memory must first go through MBR |
+| **PCR** | Program Counter Register | Holds the address of the next instruction to be executed |
+| **AR** | Accumulator Register | Holds data to be operated upon, intermediate results, and final results; results of arithmetic operations are sent here, then transferred to main memory via MBR |
+| **IR** | Instruction Register | Holds the current instruction being executed; splits into address part (→ MAR) and operation part (→ CU for decoding) |
+| **I/O Register** | Input/Output Register | Used to communicate with input and output devices |
+
+---
+
+## Bus System
+
+A **bus** is a collection of wires, chips, and slots inside the computer through which data is transmitted from one part of the computer to another. Often compared to a highway — pathways on which data travels. It is a set of parallel distinct wires, serving different purposes, allowing devices to communicate with the CPU.
+
+**Functions of the Bus:**
+- Carries information from one component to another
+- Carries data, address, or control signals
+- Allows one component to interact with others
+
+### Types of Bus
+
+| Bus | Direction | Function |
+|-----|-----------|----------|
+| **Control Bus** | Mixed| Carries control signals; generated from the Control Unit within the CPU; controls and coordinates various activities across the computer |
+| **Address Bus** | Unidirectional (processor → peripherals) | Carries memory addresses; allows CPU to reference memory locations; wider bus path = faster processing speed |
+| **Data Bus** | Bidirectional (processor ↔ memory/peripherals) | Transfers data from one location to another; may be 16-bit or 32-bit; electrical path connecting CPU, memory, and other hardware devices on the motherboard |
