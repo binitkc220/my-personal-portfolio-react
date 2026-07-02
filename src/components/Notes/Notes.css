@@ -316,6 +316,24 @@
 .notes-article a { color: #ff004b; text-decoration: none; }
 .notes-article a:hover { text-decoration: underline; }
 
+/* ── Images ──────────────────────────────────── */
+.notes-article img {
+  max-width: min(600px, 100%);
+  height: auto;
+  display: block;
+  margin: 1.5rem auto 0.3rem;
+  border-radius: 8px;
+  border: 1px solid #2a2a2a;
+}
+
+/* Paragraph containing an image → center both the image and any caption text on the next line */
+.notes-article p:has(img) {
+  text-align: center;
+  color: #777;
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
 /* ══════════════════════════════════════════════
    MOBILE RESPONSIVE
 ══════════════════════════════════════════════ */

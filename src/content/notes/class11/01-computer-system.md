@@ -13,6 +13,8 @@ The word "computer" comes from the Latin word **"computare"** which means to cal
 
 In simple terms, any electronic machine that can perform **IPOS (Input Process Output Storage)** cycle is known as computer.
 
+![IPOS  ](/note_img/ipos.png)
+
 An electronic device which accept raw data, process the data, stores the data for future use and gives the desired information (result) as output, such a device which have memory is called computer.
 
 ---
@@ -362,6 +364,9 @@ A computer system consists of the following components:
 - Instructions dictate what actions are to be taken on data
 - Results of actions are held until required for output
 
+![Elements of computer system showing logical structure  ](/note_img/elements_of_computer.png)
+Fig. Elements of computer system showing logical structure
+
 ---
 
 ## Microprocessor
@@ -496,3 +501,6 @@ A **bus** is a collection of wires, chips, and slots inside the computer through
 | **Control Bus** | Mixed| Carries control signals; generated from the Control Unit within the CPU; controls and coordinates various activities across the computer |
 | **Address Bus** | Unidirectional (processor → peripherals) | Carries memory addresses; allows CPU to reference memory locations; wider bus path = faster processing speed |
 | **Data Bus** | Bidirectional (processor ↔ memory/peripherals) | Transfers data from one location to another; may be 16-bit or 32-bit; electrical path connecting CPU, memory, and other hardware devices on the motherboard |
+
+![Bus System  ](/note_img/bus.png)
+Fig. Bus System

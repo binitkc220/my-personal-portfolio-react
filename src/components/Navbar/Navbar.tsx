@@ -9,6 +9,7 @@ const links = [
   { label: 'Skills',    href: '#skills' },
   { label: 'Services',  href: '#services' },
   { label: 'Portfolio', href: '#portfolio' },
+  { label: 'Notes',     href: '/notes/class11' },
   { label: 'Blog',      href: 'https://blog.binitkc.com.np' },
   { label: 'Contact',   href: '#contact' },
 ];
