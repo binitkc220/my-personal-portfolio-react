@@ -504,3 +504,174 @@ A **bus** is a collection of wires, chips, and slots inside the computer through
 
 ![Bus System  ](/note_img/bus.png)
 Fig. Bus System
+
+---
+
+## Memory
+
+### Primary Memory
+
+Also called **system memory / main memory / internal memory**. Directly associated with CPU — short-term storage.
+
+**Three tasks:** holds data for processing · holds instructions for processing · holds processed data waiting for output/storage.
+
+**Features:** directly accessible to CPU · faster and more expensive than secondary memory · semiconductor memory · used for smaller, temporary storage.
+
+---
+
+### RAM (Random Access Memory)
+
+- Read/write memory — CPU can access any location randomly.
+- **Volatile** — data lost when power is off.
+- Stores: instructions waiting/being executed, data waiting/being processed, data waiting for output.
+
+| Static RAM (SRAM) | Dynamic RAM (DRAM) |
+|---|---|
+| Retains data as long as power is ON | Loses data even with power ON (needs refresh) |
+| No refreshing circuit needed | Needs periodic refreshing circuit |
+| Faster | Slower than SRAM |
+| Uses flip-flop (transistors) | Uses capacitor + transistor per cell |
+| Stores bit as voltage | Stores bit as charge |
+| More expensive | Cheaper |
+
+---
+
+### ROM (Read Only Memory)
+
+- Read-only; **non-volatile** — data permanent even after power off.
+- Used for permanent storage of boot programs.
+
+| RAM | ROM |
+|---|---|
+| Read and write | Read only |
+| Volatile | Non-volatile |
+| Larger memory space | Usually less memory space |
+| Used during processing | Used during booting |
+
+**Types of ROM:**
+- **PROM** — Programmable once by user using a ROM burner.
+- **EPROM** — Erased using UV light (entire data erased); reusable.
+- **EEPROM** — Erased/reprogrammed electrically, byte by byte; fastest erase; no circuit removal needed.
+
+---
+
+### Cache Memory
+
+- High-speed memory placed **between RAM and CPU**.
+- Holds most frequently used instructions to reduce CPU waiting time.
+- **Cache hit** — data found in cache (fast). **Cache miss** — fetched from main memory (slow).
+- **L1** cache: smaller, faster, checked first. **L2** cache: larger, slower.
+- Types: **Internal cache** (inside CPU) and **External cache** (outside CPU).
+
+---
+
+### Buffer
+
+- Temporary storage space to hold data before processing (used when data arrives faster than it can be processed).
+- Uses **FIFO** (First In First Out) arrangement.
+- Print buffering = **spooling** (frees computer while printer works in background).
+- Located mainly in RAM; used for I/O processes.
+
+---
+
+### Secondary Memory
+
+Also called **auxiliary / backup memory**. Non-volatile, slower, and cheaper than primary memory. Stores large volumes of data permanently; transferred to primary memory when needed.
+
+| Primary Memory | Secondary Memory |
+|---|---|
+| Main / internal / system memory | Auxiliary / external / backup memory |
+| Holds data currently being executed | Holds data/programs permanently |
+| Directly accessible to CPU | Not directly accessible to CPU |
+| Cannot transfer data between computers | Can transfer data between computers |
+| Expensive per bit | Cheaper per bit |
+| Faster | Slower |
+| Example: RAM, ROM, Cache | Example: Hard disk, CD, DVD, Pen Drive |
+
+---
+
+## Magnetic Memory
+
+### Magnetic Disk
+
+- Most common secondary storage; random access device.
+- Circular disks (metal/Mylar plastic) coated with iron oxide.
+- Data stored in concentric **tracks** divided into **sectors**.
+
+**Advantages:** direct access · shared device · erasable & reusable · less vulnerable to corruption.
+**Limitations:** less efficient for sequential apps · less portable · needs dust-free environment.
+
+### Hard Disk
+
+- Used for permanent mass storage (OS, programs, databases).
+- Multiple **platters**; each side has a read/write head on a single access arm.
+- Made of aluminium coated with iron oxide; standard size: **3.5 inch**.
+- Rotates at **3600–15000 rpm**; average access time ~15ms.
+
+### Floppy Disk
+
+- Also called **diskette**; removable round flexible Mylar plastic disk in a protective case.
+- Data stored as magnetized spots on iron oxide film.
+- Access time ~150–250ms. Two sizes: **3½ inch** and **5¼ inch**.
+
+### Magnetic Tape
+
+- Thin plastic tape coated with magnetizable substance; sequential access only.
+- Used mainly for **backup storage** and transporting data.
+- Available in ½ inch, ¼ inch, 8mm, 3mm widths; cassette form = **cartridge tape**.
+- Capacity: 500 MB to 4 GB+. Data transfer rate: 240 KB/sec.
+
+---
+
+## Optical Disk
+
+Removable disk; data written/read using **laser beams**. High storage capacity, relatively cheap.
+
+**Advantages:** very low cost-per-bit · no mechanical head contact (reliable) · data permanent · compact and lightweight.
+**Limitations:** CD-ROM/WORM are read-only · slower than magnetic disk · sensitive to scratches/dust.
+
+| Type | Description |
+|------|-------------|
+| **CD-ROM** | Read-only; stores text, graphics, audio, video |
+| **CD-R** | Write once, read many (**WORM**); photosensitive dye changes on laser exposure |
+| **CD-RW** | Rewritable; same capacity as CD; overwritable ~100 times |
+| **DVD-ROM** | High capacity; stores video, audio, data; replaces CD-ROM/VHS |
+| **DVD-R** | Recordable once; capacity **4.7 GB** (6.4× CD-R) |
+| **DVD-RW** | Rewritable; 4.7 GB; rewritable ~1000 times; used for backup & home video |
+| **Blu-ray (BD)** | Uses blue-violet laser (405nm); **25 GB** (single layer), **50 GB** (dual layer); HD video |
+
+---
+
+## Other Storage Devices
+
+| Device | Key Features |
+|--------|-------------|
+| **Flash Memory** | Non-volatile; credit-card-sized; inserted in motherboard slots; retains data when powered off |
+| **Pen Drive** | Portable USB flash storage; pocket-sized; plug into USB port; drag-and-drop file transfer |
+| **SSD (Solid-State Drive)** | No spinning disk or moving parts; faster than HDD; shock-resistant; silent; low latency; lightweight |
+
+---
+
+## Input Devices
+
+An **input device** converts input data into a form acceptable to the computer. It is the medium of communication between user and computer.
+
+**Examples:** Keyboard, Mouse, Trackball, Touchpad, Joystick, Light Pen, Touch Screen, Scanner, Bar Code Reader, OCR, OMR, MICR, Microphone, Digital Camera.
+
+| Device | Description |
+|--------|-------------|
+| **Keyboard** | Most common input device; has alphanumeric, punctuation, and special keys; key press stored in keyboard buffer via keyboard controller |
+| **Mouse** | Small hand-held pointing device; rotating wheels detect movement; types: Mechanical, Opto-mechanical, Optical |
+| **Trackball** | Variant of mouse — movable ball on top of a stationary base; rotated with fingers |
+| **Touchpad** | Flat surface; slide fingertip to move cursor; tap to click; used in laptops |
+| **Joystick** | Vertical handle on a base with buttons; used in video games and CAD |
+| **Light Pen** | Light-sensitive stylus connected by wire; used for drawing/selecting on screen; used by engineers and designers |
+| **Touch Screen** | Screen sensitized to finger/pointer input; types: Capacitive, Infrared, Pressure sensitive |
+| **Digitizing Tablet** | Connected to stylus (for sketching) or puck (for copying/tracing); used in design and engineering |
+| **Digital Camera** | Captures images/video in digital form; photos loadable directly to computer storage |
+| **Scanner** | Enters text, images, graphs from paper directly into the computer |
+| **Bar Code Reader (BCR)** | Photo-electric scanner for bar codes; used in supermarkets, libraries, bookshops |
+| **OCR** | Reads printed/handwritten characters via light reflection; converts to computer-readable codes |
+| **OMR** | Reads pencil marks/shades; used for MCQ answer sheets, survey forms, GRE |
+| **MICR** | Reads magnetic ink characters (iron-oxide ink); mainly used in banks for cheque processing |
+| **Microphone** | Records voice/sound input; used for voice mail, videoconferencing, voice chat |
