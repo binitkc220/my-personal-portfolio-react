@@ -675,3 +675,177 @@ An **input device** converts input data into a form acceptable to the computer. 
 | **OMR** | Reads pencil marks/shades; used for MCQ answer sheets, survey forms, GRE |
 | **MICR** | Reads magnetic ink characters (iron-oxide ink); mainly used in banks for cheque processing |
 | **Microphone** | Records voice/sound input; used for voice mail, videoconferencing, voice chat |
+
+---
+
+## Output Devices
+
+Output unit translates computer-processed information (0s and 1s) into human-understandable form.
+
+**Two types of output:**
+- **Softcopy** — shown on display screen or heard from speaker; untouchable, temporary.
+- **Hardcopy** — printed on paper/material; touchable, permanent.
+
+---
+
+### Monitor (Softcopy Output Device)
+
+Display screen showing text and graphics; most common softcopy output device.
+
+**Classification by Colors:**
+
+| Type | Description |
+|------|-------------|
+| **Monochrome** | Displays one color (green/white) against contrasting background; text-only |
+| **Grayscale** | Special monochrome showing varying intensities of gray |
+| **Color** | Displays 16 to millions of colors; designed as RGB monitor |
+
+**Classification by Display Technique:**
+
+#### CRT Monitor
+- Operates like a TV: electron gun sends beam toward phosphor-coated screen.
+- Smallest phosphor dot = **pixel**; gun scans every pixel top-left to bottom-right.
+- Color CRT uses three guns for Red, Green, Blue → called **RGB monitor**.
+
+| Merits | Demerits |
+|--------|----------|
+| Cheaper | Larger and heavier |
+| Better brightness | High power consumption |
+| Larger viewing angle (~180°) | Not usable in portable devices |
+| Better graphics quality | More radiation; not good for eyes |
+
+#### LCD Monitor
+- Creates images using liquid crystal that becomes opaque when electrically charged.
+- Used in laptops, cameras, clocks, microwave ovens, CD players.
+
+| Merits | Demerits |
+|--------|----------|
+| Smaller and lighter | Limited viewing angle |
+| Usable in portable devices | More expensive than CRT |
+| Better for eyes (low radiation) | Low brightness in bright environments |
+
+#### LED Monitor
+- Array of light emitting diodes turn on/off to display output.
+- Popular for TVs, desktops, laptops, mobiles, tablets.
+
+| Merits | Demerits |
+|--------|----------|
+| Smaller, lighter, portable | Expensive |
+| Low power requirement | Difficult to maintain |
+| Better brightness than LCD and plasma | Low brightness compared to CRT |
+| Larger viewing angle (~180°); better for eyes | — |
+
+#### Gas-Plasma Display
+- Uses gas (mainly neon) that emits light when electric current passes between electrodes.
+- More expensive; used less often than LCD and LED.
+
+| Merits | Demerits |
+|--------|----------|
+| Smaller, lighter, portable | Expensive |
+| Low power; better for eyes | Low brightness compared to LCD |
+| Larger viewing angle (~180°) | — |
+
+---
+
+### Printer (Hardcopy Output Device)
+
+Peripheral device that prints text, images, and figures on paper — permanent readable form.
+
+| # | Impact Printer | Non-Impact Printer |
+|---|---|---|
+| 1 | Uses hammers/pins striking ribbon and paper | Uses thermal, laser, or inkjet technology |
+| 2 | Less efficient | Higher efficiency |
+| 3 | Slow | Fast |
+| 4 | Produces noise | Low noise |
+| 5 | Cannot print graphics perfectly | Can print graphics perfectly |
+| 6 | Can produce multiple copies using carbon paper | Cannot produce multiple copies |
+| 7 | Usually single colored | Single or multi colored |
+| 8 | Uses ink ribbon | Uses liquid or powder ink |
+| 9 | Rarely used today | Popularly used today |
+| 10 | Example: Dot Matrix, Daisy Wheel, Line printer | Example: Inkjet, Laser, Thermal printer |
+
+**Printer quality depends on:** printing speed · resolution (dpi) · memory · color · cost.
+
+#### Dot Matrix Printer (Impact)
+- Print head of small pins (9, 18, or 24 pins) strikes inked ribbon; 24-pin gives best quality.
+- Draft quality: 72 dpi; near letter-quality: 144 dpi.
+
+| Merits | Demerits |
+|--------|----------|
+| Prints any size/font text and images | Noisy and slow |
+| Cheaper; low operating cost | Low print quality |
+| Supports carbon copies | Single colored |
+
+#### Daisy Wheel Printer (Impact)
+- Removable flower-like wheel with raised characters; hammer strikes the character.
+- Speed: ~90 characters/sec; cannot print graphics.
+
+| Merits | Demerits |
+|--------|----------|
+| Better quality than dot matrix | Noisy and slow |
+| Supports carbon copies | Cannot print images; fixed font/size only |
+
+#### Line Printer (Impact)
+- Prints a whole line at once; up to 3,000 lines/minute.
+- Types: **Chain printer** (rotating chain) and **Drum printer** (rotating drum).
+- Used for mark-sheets, bank statements, bills, receipts.
+
+| Merits | Demerits |
+|--------|----------|
+| Faster (full line at once) | Noisy; lower quality than non-impact |
+| Good for continuous printing | Cannot print images; fixed font/size |
+| Supports carbon copies | Usually expensive |
+
+#### Inkjet Printer (Non-Impact)
+- Sprays electrically charged ink droplets from four nozzles (CMYK: Cyan, Yellow, Magenta, Black).
+
+| Merits | Demerits |
+|--------|----------|
+| Low noise; faster than impact | Expensive ink (high operating cost) |
+| Cheaper to buy | No multiple copies |
+| Good quality; single/multi colored | Not for continuous printing |
+
+#### Laser Printer (Non-Impact)
+- Entire page processed at once; uses toner (magnetically charged ink powder) transferred via drum.
+- Resolution: 300 to 2400+ dpi.
+
+| Merits | Demerits |
+|--------|----------|
+| Low noise; very fast | Expensive to buy |
+| Low operating cost | No multiple copies |
+| Best for large volume printing; high quality | Not for continuous printing |
+
+#### Thermal Printer (Non-Impact)
+- Uses colored waxes and heat to burn dots onto heat-sensitive paper.
+- Highest-quality desktop color printing; requires expensive special paper.
+
+| Merits | Demerits |
+|--------|----------|
+| Low noise; good quality; multi colored | Expensive to buy and operate |
+| Prints any size/font text and images | No multiple copies; not for high-volume printing |
+
+---
+
+### Plotter
+
+Specialized output device producing high-quality graphics in various colors.
+- Especially useful for maps, architectural drawings, charts and graphs.
+- Uses ink pen or inkjet mechanism; works on paper or plastic sheets.
+- Much more expensive than printers.
+- **Types:** Drum plotter, Micro-grip plotter, Flat-bed plotter, Inkjet plotter.
+
+---
+
+## Hardware Interfaces (Ports)
+
+A **port** is a socket on the outside of the system unit connected to an expansion board inside. It allows connecting peripheral devices to the computer.
+
+**Functions:** connecting peripherals · transmitting data to/from peripherals · providing electrical power to low-power devices.
+
+| Port | Description |
+|------|-------------|
+| **Parallel Port** | Transmits 8 bits simultaneously; faster than serial but efficient only up to 15 feet; used for printers |
+| **Serial Port (RS-232)** | Sends bits one at a time on a single line; used for slow devices, modems, mice; also called **COM** port |
+| **USB (Universal Serial Bus)** | Connects many peripherals via a single socket; plug-and-play (no reboot needed); powers low-consumption devices; intended to replace serial/parallel ports |
+| **HDMI** | High Definition Multimedia Interface; transmits high-quality audio and video; cable length 1–50 ft (not recommended above 25 ft); used with HDTV, projectors, game consoles, cameras, Blu-ray players |
+| **Expansion Slot** | Connection inside the motherboard (bus slot/expansion port) for hardware cards (video, sound, network, RAM, ROM); common types: AGP, PCI, PCI Express |
